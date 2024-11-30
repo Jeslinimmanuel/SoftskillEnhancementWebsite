@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Skills Enhancement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <h1>Enhance Your Soft Skills</h1>
+        <p>Develop critical soft skills through interactive exercises and AI-driven assessments.</p>
+        <img src="https://timesproweb-static-backend-prod.s3.ap-south-1.amazonaws.com/i_Stock_1360187678_086ac5c269.webp" alt="Hero Image" class="hero-image">
+
+        <button onclick="window.location.href='https://www.easygenerator.com/en/blog/learning-approach/8-key-soft-skills-that-will-enhance-employee-performance/'">Start Learning</button>
+
+
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We provide a platform to help you improve your communication, teamwork, and problem-solving skills. In today's fast-paced world, technical abilities are only part of the equation. To truly excel, you need the soft skills that foster strong relationships, effective communication, and resilient problem-solving.</p>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skill-card">
+            <h3>Communication</h3>
+            <p>Improve your verbal and non-verbal communication skills.</p>
+            <button onclick="openSkill('communication')">Practice</button>
+        </div>
+        <div class="skill-card">
+            <h3>Teamwork</h3>
+            <p>Develop effective collaboration strategies.</p>
+            <button onclick="openSkill('teamwork')">Practice</button>
+        </div>
+        <div class="skill-card">
+            <h3>Problem-Solving</h3>
+            <p>Enhance your critical thinking and decision-making skills.</p>
+            <button onclick="openSkill('problem-solving')">Practice</button>
+        </div>
+
+        <div id="quiz-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeQuiz()">&times;</span>
+                <h2 id="quiz-title">Quiz Title</h2>
+                <div id="quiz-questions"></div>
+                <button onclick="submitQuiz()">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="profile" class="profile-section">
+        <h2>User Profile</h2>
+        <form id="profile-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Save</button>
+        </form>
+    </section>
+
+    <section id="feedback" class="feedback-section">
+        <h2>Feedback</h2>
+        <form id="feedback-form">
+            <label for="feedback-message">Your Feedback:</label>
+            <textarea id="feedback-message" name="feedback-message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="dashboard" class="dashboard-section">
+        <h2>Your Progress</h2>
+        <p id="progress-info">No progress yet. Start learning to track your improvement!</p>
+        <div id="progress-bar" class="progress-bar">
+            <div id="progress-fill" class="progress-fill"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Soft Skills Enhancement. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
